@@ -19,6 +19,7 @@ class Form extends Component {
         this.handleResize()
         return (
             <React.Fragment>
+                <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'></link>
                 {this.signUp()} 
             </React.Fragment>
         ); 
@@ -28,6 +29,11 @@ class Form extends Component {
         window.addEventListener('resize', () => {
             console.log(1)
         })
+    }
+
+    handleSignUp = (e) => {
+        e.preventDefault();
+        console.log(1)
     }
 
     signUp(){
@@ -54,9 +60,12 @@ class Form extends Component {
                         <label htmlFor="re_password">Re-enter Password</label>
                         <input id = "re_password" type = 'password'></input>
                     </div>
-                    <div>
-                        <button></button>
+                    <div className = 'input'>
+                        <button onClick = {this.handleSignUp}>Submit</button>
                     </div>
+                    <footer>
+                        already have an account?
+                    </footer>
                 </div>
             </form>
         );
