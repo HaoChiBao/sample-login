@@ -49,8 +49,8 @@ class Form extends Component {
                         <input id = "username" type = 'text'></input>
                     </div>
                     <div className = 'input'>
-                        <label htmlFor="username">Email</label>
-                        <input id = "username" type = 'email'></input>
+                        <label htmlFor="email">Email</label>
+                        <input id = "email" type = 'email'></input>
                     </div>
                     <div className = 'input'>
                         <label htmlFor="password">Password</label>
