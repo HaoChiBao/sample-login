@@ -62,6 +62,7 @@ form {
     border-radius: 5px;
     border: 1px solid white;
     background: transparent;
+    transition-duration: 0.5s;
 }
 
 .input input:focus {
